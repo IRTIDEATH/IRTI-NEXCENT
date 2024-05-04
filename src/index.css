@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  font-family: 'Inter'
+}
+
+
+.bg-linear {
+  background: rgb(40,92,77);
+  background: linear-gradient(180deg, #285c4da2 0%, #b9ffcdb6 100%);
+}
+
+.bg-shadow {
+  box-shadow: 0px 22px 21px -7px rgba(0,0,0,0.48);
+-webkit-box-shadow: 0px 22px 21px -7px rgba(0,0,0,0.48);
+-moz-box-shadow: 0px 22px 21px -7px rgba(0,0,0,0.48);
+}
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
